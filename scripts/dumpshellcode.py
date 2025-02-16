@@ -1,3 +1,4 @@
+### python3 -i dumpshellcode.py ../samples/box_upx.exe -s -y -z -b -l
 from miasm.analysis.machine import Machine
 from miasm.core.locationdb import LocationDB
 from miasm.jitter.csts import PAGE_READ, PAGE_WRITE, PAGE_EXEC
