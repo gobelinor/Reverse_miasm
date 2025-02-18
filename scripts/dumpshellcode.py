@@ -24,10 +24,11 @@ jitter.set_trace_log(trace_instr=True, trace_regs=True, trace_new_blocks=True)
 
 def dump(jitter):
     data = jitter.vm.get_mem(addr_shellcode, len(shellcode))
+    print('brui')
     open('dump.bin', 'wb').write(data)
     return False
 
-jitter.add_breakpoint(addr_shellcode + 0x33, dump)
+#jitter.add_breakpoint(addr_shellcode + 0x61, dump)
 
 
 jitter.run(addr_shellcode)
