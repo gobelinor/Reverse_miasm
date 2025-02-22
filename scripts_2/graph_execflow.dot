@@ -1,0 +1,10 @@
+digraph asm_graph {
+0 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_a94001</td></tr><tr><td align="left">00A94001</td><td align="left"><font color="blue1">PUSHAD     </font></td></tr><tr><td align="left">00A94002</td><td align="left"><font color="blue1">CALL       </font><font color="darkslateblue">loc_a9400a</font></td></tr></table>> ];
+2 [
+shape="Mrecord" fontname="Courier New"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_a94007</td></tr><tr><td align="left">00A94007</td><td align="left"><font color="blue1">JMP        </font><font color="darkslateblue">loc_460644f7</font></td></tr></table>> ];
+3 [
+shape="Mrecord" fontname="Courier New" style="filled" fillcolor="red"label =<<table border="0" cellborder="0" cellpadding="3"><tr><td align="center" colspan="2" bgcolor="grey">loc_460644f7</td></tr><tr><td align="left">IOError</td></tr></table>> ];
+0 -> 2[color="blue"];
+2 -> 3[color="blue"];
+}
