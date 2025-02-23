@@ -1,9 +1,9 @@
 from miasm.analysis.sandbox import Sandbox_Win_x86_32
 from miasm.core.locationdb import LocationDB
-from miasm.os_dep.common import get_win_str_a
 from miasm.jitter.csts import PAGE_READ, PAGE_WRITE, PAGE_EXEC
 import os
 import logging
+
 
 parser = Sandbox_Win_x86_32.parser()
 parser.add_argument('filename', help='The filename of the executable to run')
@@ -36,11 +36,11 @@ def stop(jitter):
 
 sb.jitter.add_breakpoint(end_offset, stop)
 
-# avoid crash 
-sb.jitter.vm.add_memory_page(0x460644F7, PAGE_READ | PAGE_WRITE | PAGE_EXEC, b'\x00' * 0x1000)
+# avoid crash
+# sb.jitter.vm.add_memory_page(
 
 # Run
-sb.run()
+sb.run(run_addr)
 
 # Construct the output filename
 bname, fname = os.path.split(options.filename)
