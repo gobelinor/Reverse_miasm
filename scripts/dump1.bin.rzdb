@@ -4,7 +4,7 @@ version=16
 
 /core
 blocksize=0x400
-offset=0x97
+offset=0x12b
 
 /core/analysis
 
@@ -23346,9 +23346,15 @@ watcom=cc
 /core/analysis/imports
 
 /core/analysis/meta
+0x101=[{"type":"C","subtype":56,"str":"Load the PEB\\n"}]
+0x105=[{"type":"C","subtype":56,"str":"Store into edx PEB)_LDR_DATA"}]
+0x108=[{"type":"C","subtype":56,"str":"at offset 0x14 we have InMemoryOrderMOduleList\\nQui est une liste de LDR_TABLE_ENDTRY\\n"}]
+0x10b=[{"type":"C","subtype":56,"str":"Surement un pointer sur une dll, genre son nom\\nDonc pointeur le dllBaseName\\n"}]
+0x12b=[{"type":"C","subtype":56,"str":"check que ce soit la bonne DLL sinon continue de loop sur les dlL\\n"}]
 0x155=[{"type":"t","subtype":56,"str":"int32_t arg_4h"}]
 0x89=[{"type":"t","subtype":56,"str":"int32_t arg_4h"}]
 0x8f=[{"type":"t","subtype":56,"str":"int32_t arg_4h"}]
+0xab=[{"type":"C","subtype":56,"str":"Deuxieme LOOP apres la premiere pour les dll\\n"}]
 
 /core/analysis/meta/spaces
 name=CS
@@ -27196,7 +27202,7 @@ cfg.plugins=true
 cfg.prefixdump=dump
 cfg.seek.histsize=63
 cfg.seek.silent=false
-cfg.user=pid39580
+cfg.user=pid17931
 cfg.wseek=false
 cmd.depth=10
 cmd.hitinfo=1
@@ -27243,9 +27249,9 @@ diff.sort=addr
 diff.to=0
 dir.depth=10
 dir.home=/home/hanako
-dir.magic=/tmp/.mount_CutterzujXRN/usr/share/rizin/magic
-dir.plugins=/tmp/.mount_CutterzujXRN/usr/lib/rizin/plugins
-dir.prefix=/tmp/.mount_CutterzujXRN/usr
+dir.magic=/tmp/.mount_CutterV9W4uI/usr/share/rizin/magic
+dir.plugins=/tmp/.mount_CutterV9W4uI/usr/lib/rizin/plugins
+dir.prefix=/tmp/.mount_CutterV9W4uI/usr
 dir.projects=/home/hanako/.local/share/rizin/projects
 dir.types=/usr/include
 elf.checks.sections=true
@@ -27301,7 +27307,7 @@ ghidra.nl.brace=false
 ghidra.nl.else=false
 ghidra.rawptr=true
 ghidra.ropropagate=true
-ghidra.sleighhome=/tmp/.mount_CutterzujXRN/usr/lib/rizin/plugins/rz_ghidra_sleigh
+ghidra.sleighhome=/tmp/.mount_CutterV9W4uI/usr/lib/rizin/plugins/rz_ghidra_sleigh
 ghidra.verbose=true
 graph.aeab=false
 graph.body=true
@@ -27355,7 +27361,7 @@ http.index=index.html
 http.log=true
 http.maxsize=0
 http.port=9090
-http.root=/tmp/.mount_CutterzujXRN/usr/share/rizin/www
+http.root=/tmp/.mount_CutterV9W4uI/usr/share/rizin/www
 http.stop.after=0
 http.timeout=3
 http.upget=false
@@ -27559,8 +27565,67 @@ tag.time=settimeofday gettimeofday time adjtime ctime timed date$ sleep Sleep us
 /core/flags/zones
 
 /core/seek
--1={"offset":155,"cursor":0,"current":false}
--2={"offset":152,"cursor":0,"current":false}
--3={"offset":155,"cursor":0,"current":false}
--4={"offset":0,"cursor":0,"current":false}
-0={"offset":151,"cursor":0,"current":true}
+-1={"offset":315,"cursor":0,"current":false}
+-10={"offset":289,"cursor":0,"current":false}
+-11={"offset":286,"cursor":0,"current":false}
+-12={"offset":284,"cursor":0,"current":false}
+-13={"offset":286,"cursor":0,"current":false}
+-14={"offset":284,"cursor":0,"current":false}
+-15={"offset":282,"cursor":0,"current":false}
+-16={"offset":280,"cursor":0,"current":false}
+-17={"offset":278,"cursor":0,"current":false}
+-18={"offset":275,"cursor":0,"current":false}
+-19={"offset":274,"cursor":0,"current":false}
+-2={"offset":314,"cursor":0,"current":false}
+-20={"offset":272,"cursor":0,"current":false}
+-21={"offset":270,"cursor":0,"current":false}
+-22={"offset":267,"cursor":0,"current":false}
+-23={"offset":264,"cursor":0,"current":false}
+-24={"offset":261,"cursor":0,"current":false}
+-25={"offset":257,"cursor":0,"current":false}
+-26={"offset":255,"cursor":0,"current":false}
+-27={"offset":254,"cursor":0,"current":false}
+-28={"offset":336,"cursor":0,"current":false}
+-29={"offset":335,"cursor":0,"current":false}
+-3={"offset":310,"cursor":0,"current":false}
+-30={"offset":165,"cursor":0,"current":false}
+-31={"offset":152,"cursor":0,"current":false}
+-32={"offset":118,"cursor":0,"current":false}
+-33={"offset":123,"cursor":0,"current":false}
+-34={"offset":118,"cursor":0,"current":false}
+-35={"offset":144,"cursor":0,"current":false}
+-36={"offset":143,"cursor":0,"current":false}
+-37={"offset":144,"cursor":0,"current":false}
+-38={"offset":149,"cursor":0,"current":false}
+-39={"offset":151,"cursor":0,"current":false}
+-4={"offset":308,"cursor":0,"current":false}
+-40={"offset":152,"cursor":0,"current":false}
+-41={"offset":151,"cursor":0,"current":false}
+-42={"offset":149,"cursor":0,"current":false}
+-43={"offset":144,"cursor":0,"current":false}
+-44={"offset":143,"cursor":0,"current":false}
+-45={"offset":138,"cursor":0,"current":false}
+-46={"offset":137,"cursor":0,"current":false}
+-47={"offset":136,"cursor":0,"current":false}
+-48={"offset":130,"cursor":0,"current":false}
+-49={"offset":124,"cursor":0,"current":false}
+-5={"offset":306,"cursor":0,"current":false}
+-50={"offset":123,"cursor":0,"current":false}
+-51={"offset":149,"cursor":0,"current":false}
+-52={"offset":144,"cursor":0,"current":false}
+-53={"offset":143,"cursor":0,"current":false}
+-54={"offset":138,"cursor":0,"current":false}
+-55={"offset":137,"cursor":0,"current":false}
+-56={"offset":136,"cursor":0,"current":false}
+-57={"offset":130,"cursor":0,"current":false}
+-58={"offset":124,"cursor":0,"current":false}
+-59={"offset":130,"cursor":0,"current":false}
+-6={"offset":303,"cursor":0,"current":false}
+-60={"offset":124,"cursor":0,"current":false}
+-61={"offset":130,"cursor":0,"current":false}
+-62={"offset":136,"cursor":0,"current":false}
+-63={"offset":137,"cursor":0,"current":false}
+-7={"offset":299,"cursor":0,"current":false}
+-8={"offset":297,"cursor":0,"current":false}
+-9={"offset":295,"cursor":0,"current":false}
+0={"offset":299,"cursor":0,"current":true}

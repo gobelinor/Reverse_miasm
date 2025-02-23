@@ -1,0 +1,23 @@
+Architecture: x86
+DefaultABI: Microsoft_x86_cdecl
+Segments:
+ - StartAddress: "0x400000:Generic32"
+   VirtualSize: 373
+   StartOffset: 0
+   FileSize: 373
+   IsReadable: true
+   IsWriteable: true
+   IsExecutable: true
+Functions:
+ - Entry: "0x400061:Code_x86"
+   CustomName: "main"
+ - Entry: "0x40015e:Code_x86"
+   CustomName: "unhash_one"
+ - Entry: "0x40014f:Code_x86"
+   CustomName: "unkown_pop_ecx"
+ - Entry: "0x4000fe:Code_x86"
+   CustomName: "may_hit_dll"
+ - Entry: "0x4000ab:Code_x86"
+   CustomName: "may_check_something_dll"
+ - Entry: "0x40007b:Code_x86"
+   CustomName: "after_check"
