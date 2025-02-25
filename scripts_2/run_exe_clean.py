@@ -1,3 +1,4 @@
+from __future__ import print_function
 from miasm.analysis.sandbox import Sandbox_Win_x86_32
 from miasm.core.locationdb import LocationDB
 from miasm.jitter.csts import PAGE_READ, PAGE_WRITE, PAGE_EXEC
@@ -8,25 +9,26 @@ import logging
 
 # py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
 
-# def kernel32_GetProcAddress(jitter):
-#     """Hook on GetProcAddress to note where UPX stores import pointers"""
-#     ret_ad, args = jitter.func_args_stdcall(["libbase", "fname"])
-#     # When the function is called, EBX is a pointer to the destination buffer
-#     print('Call to kernel32_GetProcAddress reached')
-#     dst_ad = jitter.cpu.EBX
-#     logging.error('EBX ' + hex(dst_ad))
-#     # Handle ordinal imports
-#     fname = (args.fname if args.fname < 0x10000
-#              else get_win_str_a(jitter, args.fname))
-#     logging.error(fname)
-#     # Get the generated address of the library, and store it in memory to
-#     # dst_ad
-#     ad = sb.libs.lib_get_add_func(args.libbase, fname, dst_ad)
-#     # Add a breakpoint in case of a call on the resolved function
-#     # NOTE: never happens in UPX, just for skeleton
-#     jitter.handle_function(ad)
-#     jitter.func_ret_stdcall(ret_ad, ad)
-#
+def kernel32_GetProcAddress(jitter):
+    """Hook on GetProcAddress to note where UPX stores import pointers"""
+    ret_ad, args = jitter.func_args_stdcall(["libbase", "fname"])
+    # When the function is called, EBX is a pointer to the destination buffer
+    print('Call to kernel32_GetProcAddress reached')
+    dst_ad = jitter.cpu.EBX
+    logging.error('EBX ' + hex(dst_ad))
+    # Handle ordinal imports
+    fname = (args.fname if args.fname < 0x10000
+             else get_win_str_a(jitter, args.fname))
+    logging.error(fname)
+    # Get the generated address of the library, and store it in memory to
+    # dst_ad
+    ad = sb.libs.lib_get_add_func(args.libbase, fname, dst_ad)
+    print(sb.libs)
+    # Add a breakpoint in case of a call on the resolved function
+    # NOTE: never happens in UPX, just for skeleton
+    jitter.handle_function(ad)
+    jitter.func_ret_stdcall(ret_ad, ad)
+
 
 # def kernel32_Beep(jitter):
 #     print('Call to kernel32_Beep reached')
@@ -47,6 +49,7 @@ options = parser.parse_args()
 loc_db = LocationDB()
 sb = Sandbox_Win_x86_32(
     loc_db, options.filename, options, globals(),
+    # parse_reloc=False
 )
 
 ### ce code declenche une protection qui fait JUMP dans le merde au bout de 3 instructions
@@ -92,7 +95,7 @@ sb.run()
 # Construct the output filename
 bname, fname = os.path.split(options.filename)
 fname = os.path.join(bname, fname.replace('.', '_'))
-out_fname = fname + '_unupx.exe'
+out_fname = fname + '_unupx_clean.exe'
 
 print("Saving to %s" % out_fname)
 vm2pe(sb.jitter, out_fname, libs=sb.libs, e_orig=sb.pe)
