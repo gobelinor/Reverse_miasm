@@ -1,0 +1,399 @@
+[SOLUTION] For file output_086.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=xaycwqxujx, lpCaption=Code:, uType=0)
+[SOLUTION] The code is xaycwqxujx
+
+[SOLUTION] For file output_033.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ipurqfutqk, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ipurqfutqk
+
+[SOLUTION] For file output_021.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ujpgzpzqfq, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ujpgzpzqfq
+
+[SOLUTION] For file output_016.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=jnhoanvwih, lpCaption=Code:, uType=0)
+[SOLUTION] The code is jnhoanvwih
+
+[SOLUTION] For file output_046.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=sshuqesrzb, lpCaption=Code:, uType=0)
+[SOLUTION] The code is sshuqesrzb
+
+[SOLUTION] For file output_074.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zjfgldozoq, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zjfgldozoq
+
+[SOLUTION] For file output_054.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ppmhoksxmg, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ppmhoksxmg
+
+[SOLUTION] For file output_076.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=gjbnhjjyop, lpCaption=Code:, uType=0)
+[SOLUTION] The code is gjbnhjjyop
+
+[SOLUTION] For file output_022.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=tofwdxulzc, lpCaption=Code:, uType=0)
+[SOLUTION] The code is tofwdxulzc
+
+[SOLUTION] For file output_039.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=aghmxsauzi, lpCaption=Code:, uType=0)
+[SOLUTION] The code is aghmxsauzi
+
+[SOLUTION] For file output_002.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=lfxzvjitgt, lpCaption=Code:, uType=0)
+[SOLUTION] The code is lfxzvjitgt
+
+[SOLUTION] For file output_005.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zwxuqaoyhu, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zwxuqaoyhu
+
+[SOLUTION] For file output_078.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=vxixnbueum, lpCaption=Code:, uType=0)
+[SOLUTION] The code is vxixnbueum
+
+[SOLUTION] For file output_083.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=cembbuggfj, lpCaption=Code:, uType=0)
+[SOLUTION] The code is cembbuggfj
+
+[SOLUTION] For file output_036.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zzjcaqufhi, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zzjcaqufhi
+
+[SOLUTION] For file output_092.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zzvyzdsqpf, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zzvyzdsqpf
+
+[SOLUTION] For file output_091.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=vvfmozxooo, lpCaption=Code:, uType=0)
+[SOLUTION] The code is vvfmozxooo
+
+[SOLUTION] For file output_094.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=jnavpljnti, lpCaption=Code:, uType=0)
+[SOLUTION] The code is jnavpljnti
+
+[SOLUTION] For file output_045.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=icjkacpadj, lpCaption=Code:, uType=0)
+[SOLUTION] The code is icjkacpadj
+
+[SOLUTION] For file output_042.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=hhexdvxrcs, lpCaption=Code:, uType=0)
+[SOLUTION] The code is hhexdvxrcs
+
+[SOLUTION] For file output_026.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ntrbeyypbx, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ntrbeyypbx
+
+[SOLUTION] For file output_064.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=rvagiwzuzy, lpCaption=Code:, uType=0)
+[SOLUTION] The code is rvagiwzuzy
+
+[SOLUTION] For file output_068.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=dtshnpixvk, lpCaption=Code:, uType=0)
+[SOLUTION] The code is dtshnpixvk
+
+[SOLUTION] For file output_029.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=cqlmnabdou, lpCaption=Code:, uType=0)
+[SOLUTION] The code is cqlmnabdou
+
+[SOLUTION] For file output_084.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=paqvkgopry, lpCaption=Code:, uType=0)
+[SOLUTION] The code is paqvkgopry
+
+[SOLUTION] For file output_085.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=kghoyylshv, lpCaption=Code:, uType=0)
+[SOLUTION] The code is kghoyylshv
+
+[SOLUTION] For file output_047.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=roskiqmmtb, lpCaption=Code:, uType=0)
+[SOLUTION] The code is roskiqmmtb
+
+[SOLUTION] For file output_070.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=oekdevvtgw, lpCaption=Code:, uType=0)
+[SOLUTION] The code is oekdevvtgw
+
+[SOLUTION] For file output_088.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=fuaqywakvo, lpCaption=Code:, uType=0)
+[SOLUTION] The code is fuaqywakvo
+
+[SOLUTION] For file output_008.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=egwbcehzqg, lpCaption=Code:, uType=0)
+[SOLUTION] The code is egwbcehzqg
+
+[SOLUTION] For file output_035.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=xkejnisbxq, lpCaption=Code:, uType=0)
+[SOLUTION] The code is xkejnisbxq
+
+[SOLUTION] For file output_007.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ubcrdlsbqg, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ubcrdlsbqg
+
+[SOLUTION] For file output_062.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ojvlfqffai, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ojvlfqffai
+
+[SOLUTION] For file output_095.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ezatcuizgb, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ezatcuizgb
+
+[SOLUTION] For file output_028.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=rtwfheuoyn, lpCaption=Code:, uType=0)
+[SOLUTION] The code is rtwfheuoyn
+
+[SOLUTION] For file output_087.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=rdiykurwkw, lpCaption=Code:, uType=0)
+[SOLUTION] The code is rdiykurwkw
+
+[SOLUTION] For file output_090.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=pvssjulzos, lpCaption=Code:, uType=0)
+[SOLUTION] The code is pvssjulzos
+
+[SOLUTION] For file output_099.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=tfhheycixm, lpCaption=Code:, uType=0)
+[SOLUTION] The code is tfhheycixm
+
+[SOLUTION] For file output_044.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=fmhjahdsad, lpCaption=Code:, uType=0)
+[SOLUTION] The code is fmhjahdsad
+
+[SOLUTION] For file output_079.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=tfhhxwpecl, lpCaption=Code:, uType=0)
+[SOLUTION] The code is tfhhxwpecl
+
+[SOLUTION] For file output_055.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=xjcxfjclxv, lpCaption=Code:, uType=0)
+[SOLUTION] The code is xjcxfjclxv
+
+[SOLUTION] For file output_053.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=wpwqlxoxab, lpCaption=Code:, uType=0)
+[SOLUTION] The code is wpwqlxoxab
+
+[SOLUTION] For file output_009.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=iefvakqotc, lpCaption=Code:, uType=0)
+[SOLUTION] The code is iefvakqotc
+
+[SOLUTION] For file output_073.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=psfojscpmq, lpCaption=Code:, uType=0)
+[SOLUTION] The code is psfojscpmq
+
+[SOLUTION] For file output_023.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=asjnmqlexg, lpCaption=Code:, uType=0)
+[SOLUTION] The code is asjnmqlexg
+
+[SOLUTION] For file output_030.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=tugibmmuec, lpCaption=Code:, uType=0)
+[SOLUTION] The code is tugibmmuec
+
+[SOLUTION] For file output_024.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=gfgfvvcwye, lpCaption=Code:, uType=0)
+[SOLUTION] The code is gfgfvvcwye
+
+[SOLUTION] For file output_096.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=gdkybwafnu, lpCaption=Code:, uType=0)
+[SOLUTION] The code is gdkybwafnu
+
+[SOLUTION] For file output_004.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=xmpeccamrj, lpCaption=Code:, uType=0)
+[SOLUTION] The code is xmpeccamrj
+
+[SOLUTION] For file output_071.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ieygicgqbt, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ieygicgqbt
+
+[SOLUTION] For file output_010.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=sagopiuzfb, lpCaption=Code:, uType=0)
+[SOLUTION] The code is sagopiuzfb
+
+[SOLUTION] For file output_069.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ctlkzzrnon, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ctlkzzrnon
+
+[SOLUTION] For file output_013.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=uhvehuxfec, lpCaption=Code:, uType=0)
+[SOLUTION] The code is uhvehuxfec
+
+[SOLUTION] For file output_050.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=luhwpykcrk, lpCaption=Code:, uType=0)
+[SOLUTION] The code is luhwpykcrk
+
+[SOLUTION] For file output_006.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=baevspyxlk, lpCaption=Code:, uType=0)
+[SOLUTION] The code is baevspyxlk
+
+[SOLUTION] For file output_001.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=idpyopumzg, lpCaption=Code:, uType=0)
+[SOLUTION] The code is idpyopumzg
+
+[SOLUTION] For file output_066.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=hzojizrdxp, lpCaption=Code:, uType=0)
+[SOLUTION] The code is hzojizrdxp
+
+[SOLUTION] For file output_000.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=biqpmzjpls, lpCaption=Code:, uType=0)
+[SOLUTION] The code is biqpmzjpls
+
+[SOLUTION] For file output_020.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ksfanncdek, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ksfanncdek
+
+[SOLUTION] For file output_052.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=lnbefznflo, lpCaption=Code:, uType=0)
+[SOLUTION] The code is lnbefznflo
+
+[SOLUTION] For file output_038.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=clwolbtvfs, lpCaption=Code:, uType=0)
+[SOLUTION] The code is clwolbtvfs
+
+[SOLUTION] For file output_043.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=olvwzdotpt, lpCaption=Code:, uType=0)
+[SOLUTION] The code is olvwzdotpt
+
+[SOLUTION] For file output_089.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=elcenkgjwv, lpCaption=Code:, uType=0)
+[SOLUTION] The code is elcenkgjwv
+
+[SOLUTION] For file output_048.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zqgwynfezv, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zqgwynfezv
+
+[SOLUTION] For file output_012.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=emalpiuzow, lpCaption=Code:, uType=0)
+[SOLUTION] The code is emalpiuzow
+
+[SOLUTION] For file output_018.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=khgpupfpjo, lpCaption=Code:, uType=0)
+[SOLUTION] The code is khgpupfpjo
+
+[SOLUTION] For file output_051.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=rfhhrimrox, lpCaption=Code:, uType=0)
+[SOLUTION] The code is rfhhrimrox
+
+[SOLUTION] For file output_017.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ljfywwrvid, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ljfywwrvid
+
+[SOLUTION] For file output_025.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=gjupbyibjs, lpCaption=Code:, uType=0)
+[SOLUTION] The code is gjupbyibjs
+
+[SOLUTION] For file output_060.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ihzpokbzcv, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ihzpokbzcv
+
+[SOLUTION] For file output_067.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=onitnptigu, lpCaption=Code:, uType=0)
+[SOLUTION] The code is onitnptigu
+
+[SOLUTION] For file output_037.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=uloqzdvotz, lpCaption=Code:, uType=0)
+[SOLUTION] The code is uloqzdvotz
+
+[SOLUTION] For file output_032.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=jwhpaxbdkq, lpCaption=Code:, uType=0)
+[SOLUTION] The code is jwhpaxbdkq
+
+[SOLUTION] For file output_065.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=qhooqorkun, lpCaption=Code:, uType=0)
+[SOLUTION] The code is qhooqorkun
+
+[SOLUTION] For file output_015.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=fhabzvewlh, lpCaption=Code:, uType=0)
+[SOLUTION] The code is fhabzvewlh
+
+[SOLUTION] For file output_098.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=lnbpjxvrcz, lpCaption=Code:, uType=0)
+[SOLUTION] The code is lnbpjxvrcz
+
+[SOLUTION] For file output_057.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=hqkpjnumax, lpCaption=Code:, uType=0)
+[SOLUTION] The code is hqkpjnumax
+
+[SOLUTION] For file output_082.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=qjzfzfvify, lpCaption=Code:, uType=0)
+[SOLUTION] The code is qjzfzfvify
+
+[SOLUTION] For file output_011.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=oqsgfzqput, lpCaption=Code:, uType=0)
+[SOLUTION] The code is oqsgfzqput
+
+[SOLUTION] For file output_093.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=dclefmdzfs, lpCaption=Code:, uType=0)
+[SOLUTION] The code is dclefmdzfs
+
+[SOLUTION] For file output_031.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ymevbedrhw, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ymevbedrhw
+
+[SOLUTION] For file output_075.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=obxyqvvpvv, lpCaption=Code:, uType=0)
+[SOLUTION] The code is obxyqvvpvv
+
+[SOLUTION] For file output_049.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=dkyrqzbvby, lpCaption=Code:, uType=0)
+[SOLUTION] The code is dkyrqzbvby
+
+[SOLUTION] For file output_097.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zbsarybaxi, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zbsarybaxi
+
+[SOLUTION] For file output_034.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=hamlcnjkds, lpCaption=Code:, uType=0)
+[SOLUTION] The code is hamlcnjkds
+
+[SOLUTION] For file output_063.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ipvcmxccvg, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ipvcmxccvg
+
+[SOLUTION] For file output_061.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=zkjkzwapll, lpCaption=Code:, uType=0)
+[SOLUTION] The code is zkjkzwapll
+
+[SOLUTION] For file output_040.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=hjvuvgeyli, lpCaption=Code:, uType=0)
+[SOLUTION] The code is hjvuvgeyli
+
+[SOLUTION] For file output_014.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ixijxcvojo, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ixijxcvojo
+
+[SOLUTION] For file output_041.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=fmswjrimxy, lpCaption=Code:, uType=0)
+[SOLUTION] The code is fmswjrimxy
+
+[SOLUTION] For file output_056.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=yrnwhdltck, lpCaption=Code:, uType=0)
+[SOLUTION] The code is yrnwhdltck
+
+[SOLUTION] For file output_077.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=hgdjprther, lpCaption=Code:, uType=0)
+[SOLUTION] The code is hgdjprther
+
+[SOLUTION] For file output_003.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=ltpusctapi, lpCaption=Code:, uType=0)
+[SOLUTION] The code is ltpusctapi
+
+[SOLUTION] For file output_059.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=aejwavtapm, lpCaption=Code:, uType=0)
+[SOLUTION] The code is aejwavtapm
+
+[SOLUTION] For file output_058.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=bgomljzioz, lpCaption=Code:, uType=0)
+[SOLUTION] The code is bgomljzioz
+
+[SOLUTION] For file output_072.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=lwrtljxwvt, lpCaption=Code:, uType=0)
+[SOLUTION] The code is lwrtljxwvt
+
+[SOLUTION] For file output_080.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=llrmlarymh, lpCaption=Code:, uType=0)
+[SOLUTION] The code is llrmlarymh
+
+[SOLUTION] For file output_019.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=qgmlqjseti, lpCaption=Code:, uType=0)
+[SOLUTION] The code is qgmlqjseti
+
+[SOLUTION] For file output_081.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=pafeovytak, lpCaption=Code:, uType=0)
+[SOLUTION] The code is pafeovytak
+
+[SOLUTION] For file output_027.bin
+[SOLUTION] MessageBoxA(hWnd=0, lpText=jgccirkilm, lpCaption=Code:, uType=0)
+[SOLUTION] The code is jgccirkilm

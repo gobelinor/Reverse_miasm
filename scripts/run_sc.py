@@ -2,6 +2,23 @@ from miasm.core.locationdb import LocationDB
 from miasm.analysis.sandbox import Sandbox_Win_x86_32
 from miasm.jitter.csts import PAGE_READ, PAGE_WRITE, PAGE_EXEC
 
+
+def user32_MessageBoxA(jitter):
+    # MessageBoxA
+    # MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType)
+    # hWnd: 0
+    # lpText: "Hello, World!"
+    # lpCaption: "Hello"
+    # uType: 0
+    # Return: int
+    ret_ad, args = sb.jitter.func_args_stdcall(["hWnd", "lpText", "lpCaption", "uType"])
+    hWnd, text_ad, caption_ad, uType = args
+    text = sb.jitter.get_c_str(text_ad)
+    caption = sb.jitter.get_c_str(caption_ad)
+    print(f"MessageBoxA(hWnd={hWnd}, lpText={text}, lpCaption={caption}, uType={uType})")
+    jitter.func_ret_stdcall(ret_ad, 1) # 1 == OK
+
+
 ### Create environnement with PE context for the shellcode to run 
 
 # Parse arguments
@@ -29,5 +46,5 @@ sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x02"*4)
 # Run at 
 sb.run(run_addr)
 
-
 ## python3 -i run_sc.py -b -s -l -y ../samples/box_upx.exe ../files/output_022.bin
+## python3 -i run_sc.py -l -y ../samples/box_upx.exe ../files/output_022.bin

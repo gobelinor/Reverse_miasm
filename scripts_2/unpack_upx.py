@@ -12,23 +12,19 @@ from miasm.os_dep.common import get_win_str_a
 def kernel32_GetProcAddress(jitter):
     """Hook on GetProcAddress to note where UPX stores import pointers"""
     ret_ad, args = jitter.func_args_stdcall(["libbase", "fname"])
-
     # When the function is called, EBX is a pointer to the destination buffer
     dst_ad = jitter.cpu.EBX
     logging.error('EBX ' + hex(dst_ad))
-
     # Handle ordinal imports
     fname = (args.fname if args.fname < 0x10000
              else get_win_str_a(jitter, args.fname))
     logging.error(fname)
-
     # Get the generated address of the library, and store it in memory to
     # dst_ad
     ad = sb.libs.lib_get_add_func(args.libbase, fname, dst_ad)
     # Add a breakpoint in case of a call on the resolved function
     # NOTE: never happens in UPX, just for skeleton
     jitter.handle_function(ad)
-
     jitter.func_ret_stdcall(ret_ad, ad)
 
 
