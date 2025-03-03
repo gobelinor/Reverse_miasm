@@ -9,8 +9,8 @@ import logging
 
 # py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
 
+# Permet de "reconstruire" l'Import Table, mais fonctionne moyennement bien 
 def kernel32_GetProcAddress(jitter):
-    """Hook on GetProcAddress to note where UPX stores import pointers"""
     ret_ad, args = jitter.func_args_stdcall(["libbase", "fname"])
     # When the function is called, EBX is a pointer to the destination buffer
     print('Call to kernel32_GetProcAddress reached')
@@ -29,7 +29,7 @@ def kernel32_GetProcAddress(jitter):
     jitter.handle_function(ad)
     jitter.func_ret_stdcall(ret_ad, ad)
 
-
+# Si on veut que le binaire s'execute en entier 
 # def kernel32_Beep(jitter):
 #     print('Call to kernel32_Beep reached')
 #     ret_ad, args = jitter.func_args_stdcall(["dwFreq", "dwDuration"])
@@ -37,8 +37,6 @@ def kernel32_GetProcAddress(jitter):
 #     # ptr2 = jitter.get_arg_n_cdecl(2)
 #     # print(ptr1)
 #     # print(ptr2)
-#     # ad = sb.libs.lib_get_add_func(args.libbase, fname, dst_ad)
-#     # jitter.handle_function(ad)
 #     jitter.func_ret_stdcall(ret_ad, 1)
 #     # return 0
 
@@ -49,7 +47,6 @@ options = parser.parse_args()
 loc_db = LocationDB()
 sb = Sandbox_Win_x86_32(
     loc_db, options.filename, options, globals(),
-    # parse_reloc=False
 )
 
 ### ce code declenche une protection qui fait JUMP dans le merde au bout de 3 instructions
@@ -98,7 +95,17 @@ fname = os.path.join(bname, fname.replace('.', '_'))
 out_fname = fname + '_unupx_clean.exe'
 
 print("Saving to %s" % out_fname)
+
+# Rebuild the PE thanks to `vm2pe`
+#
+# vm2pe will:
+# - set the new entry point to the current address (ie, the OEP)
+# - dump each section from the virtual memory into the new PE
+# - use `sb.libs` to generate a new import directory, and use it in the new PE
+# - save the resulting PE in `out_fname`
+
 vm2pe(sb.jitter, out_fname, libs=sb.libs, e_orig=sb.pe)
 
-# py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
 
+# py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
+# py -i run_all_exe.py ../output_022.exe

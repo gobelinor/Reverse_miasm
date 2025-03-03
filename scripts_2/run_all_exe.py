@@ -5,11 +5,10 @@ from miasm.jitter.loader.pe import vm2pe
 from miasm.os_dep.common import get_win_str_a
 import os
 
-# py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
+# py -i run_all_nsm.py ../output_022.exe -z -o -i -b -s -l -y
 
-
+# Permet de "reconstruire" l'Import Table, mais fonctionne moyennement bien 
 # def kernel32_GetProcAddress(jitter):
-#     """Hook on GetProcAddress to note where UPX stores import pointers"""
 #     ret_ad, args = jitter.func_args_stdcall(["libbase", "fname"])
 #     # When the function is called, EBX is a pointer to the destination buffer
 #     print('Call to kernel32_GetProcAddress reached')
@@ -28,30 +27,24 @@ import os
 #     jitter.func_ret_stdcall(ret_ad, ad)
 #
 
+# Si on veut que le binaire s'execute en entier 
 def kernel32_Beep(jitter):
     print('Call to kernel32_Beep reached')
     ret_ad, args = jitter.func_args_stdcall(["dwFreq", "dwDuration"])
-    # ptr1 = jitter.get_arg_n_cdecl(1)
-    # ptr2 = jitter.get_arg_n_cdecl(2)
-    # print(ptr1)
-    # print(ptr2)
-    # ad = sb.libs.lib_get_add_func(args.libbase, fname, dst_ad)
-    # jitter.handle_function(ad)
     jitter.func_ret_stdcall(ret_ad, 1)
-    # return 0
-#
-def my_lstrcmp(jitter):
-    ezoufyzouefyzeoufyzeoufyzeoufyu
-    print('Call to my_lstrcmp reached')
-    ret_ad, args = jitter.func_args_stdcall(["ptr_str1", "ptr_str2"])
-    args.str2 = get_win_str_a(jitter, args.str2)
-    jitter.func_ret_stdcall(ret_ad, 0)
+
+# Malheureusement ça marche pas la pirouette ci dessous car la fonction est définie dans le binaire
+# def my_lstrcmp(jitter):
+#     ezoufyzouefyzeoufyzeoufyzeoufyu
+#     print('Call to my_lstrcmp reached')
+#     ret_ad, args = jitter.func_args_stdcall(["ptr_str1", "ptr_str2"])
+#     args.str2 = get_win_str_a(jitter, args.str2)
+#     jitter.func_ret_stdcall(ret_ad, 0)
 
 
 
 
 ### ce code declenche une protection qui fait JUMP dans le merde au bout de 3 instructions
-
 # # Ensure there is one and only one leave (for OEP discovering)
 # mdis = sb.machine.dis_engine(sb.jitter.bs, loc_db=loc_db)
 # mdis.dont_dis_nulstart_bloc = True
@@ -67,7 +60,6 @@ def my_lstrcmp(jitter):
 # logging.info(hex(end_offset))
 
 def stop(jitter):
-    # logging.info('section .text reached')
     # print('section .text reached')
     # print('Call to kernel32_GetTickCount reached')
     # print('POPAD reached')
@@ -86,6 +78,8 @@ def stop(jitter):
 # 00A943AF POPAD
 
 # print("EntryPoint:", hex(sb.entry_point))
+
+# Tentative de bypass les protections initiales finalement inutile
 # print(hex(sb.entry_point+int(0x0d)))
 # sb.run(sb.entry_point+int(0x0d))
 
@@ -96,30 +90,27 @@ def emulate(exe, file):
     sb = Sandbox_Win_x86_32(
     loc_db, exe, options, globals(),
     )
-    breakpointt = sb.entry_point - 0x3000
-    sb.jitter.add_breakpoint(breakpointt, stop) # debut section .text
+    breakpointt = sb.entry_point - 0x3000 # debut section .text
+    sb.jitter.add_breakpoint(breakpointt, stop)     
     print("EntryPoint:", hex(sb.entry_point))
-    # print("Breakpoint:", hex(breakpointt))
+    print("Breakpoint:", hex(breakpointt))
+    
+    # Tentative de pirouette qui ne marche pas    
     # addr = sb.loc_db.get_name_location('my_lstrcmp')
     # print(addr)
-    # print(sb.loc_db.names)
-    # zefk
     # sb.jitter.add_breakpoint(addr, my_lstrcmp)
 
     sb.run()
     vm2pe(sb.jitter, "../out_bin-mdo-RE2600/"+file+"unpacked.exe", libs=sb.libs, e_orig=sb.pe)
-    # print("LE CODE:", sb.jitter.get_c_str(breakpointt+0x81))
+    # print("LE CODE:", sb.jitter.get_c_str(breakpointt+0x81)) fonctionne uniquement pour notre binaire malheureusement 
 
+# TOUS LES BINAIRES DE L'ARCHIVE !!!
 files = os.listdir("../out_bin-mdo-RE2600")
 for file in files:
     path = "../out_bin-mdo-RE2600/"+file+"/archives/"+file+"/"+file+".exe"
-    print(f"[SOLUTION] For file {file}")
-    # write_to_output_file(f"\n[SOLUTION] For file {file}")
     if ".sh" in file:
         continue
     emulate(path, file)
 
-
-
-# py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
-
+# py -i run_all_exe.py ../output_022.exe -z -o -i -b -s -l -y
+# py -i run_all_exe.py

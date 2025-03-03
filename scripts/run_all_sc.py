@@ -24,7 +24,6 @@ def user32_MessageBoxA(jitter):
     write_to_output_file(f"[SOLUTION] The code is {text}")
     jitter.func_ret_stdcall(ret_ad, 1) # 1 == OK
 
-
 def emulate(data):
     # Parse arguments
     parser = Sandbox_Win_x86_32.parser(description="PE sandboxer")
@@ -35,7 +34,7 @@ def emulate(data):
     sb = Sandbox_Win_x86_32(loc_db, options.filename, options, globals())
     # Avoid crash and continue execution
     sb.jitter.vm.add_memory_page(0x7ffdf002, PAGE_READ | PAGE_WRITE, b"\x00"*4)
-    sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x02"*4)
+    sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x02"*4) # mucho processors
     # Load the shellcode
     run_addr = 0x40000000 
     sb.jitter.vm.remove_memory_page(run_addr)
@@ -51,7 +50,6 @@ for file in files:
     print(f"[SOLUTION] For file {file}")
     write_to_output_file(f"\n[SOLUTION] For file {file}")
     emulate(data)
-
 
 ## python3 -i run_all_sc.py -b -s -l -y ../samples/box_upx.exe 
 ## python3 -i run_all_sc.py -l -y ../samples/box_upx.exe 

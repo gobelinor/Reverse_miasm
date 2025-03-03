@@ -39,9 +39,12 @@ run_addr = 0x40000000
 sb.jitter.vm.add_memory_page(run_addr, PAGE_READ | PAGE_WRITE | PAGE_EXEC, data, "shellcode")
 sb.jitter.cpu.EAX = run_addr
 
-# Avoid crash 
-sb.jitter.vm.add_memory_page(0x7ffdf002, PAGE_READ | PAGE_WRITE, b"\x00"*4)
-sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x02"*4)
+# 0x7ffdf000 PEB FS:[0x30] 
+# 0x7ffdf002 BYTE BeingDebugged
+# 0x7ffdf064 DWORD NumberOfProcessors
+# Avoid crash and continue execution 
+sb.jitter.vm.add_memory_page(0x7ffdf002, PAGE_READ | PAGE_WRITE, b"\x00")
+sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x00\x00\x00\x02")
 
 # Run at 
 sb.run(run_addr)

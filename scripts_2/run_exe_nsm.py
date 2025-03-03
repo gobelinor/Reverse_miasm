@@ -8,8 +8,8 @@ import logging
 
 # py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
 
+# Permet de "reconstruire" l'Import Table, mais fonctionne moyennement bien 
 # def kernel32_GetProcAddress(jitter):
-#     """Hook on GetProcAddress to note where UPX stores import pointers"""
 #     ret_ad, args = jitter.func_args_stdcall(["libbase", "fname"])
 #     # When the function is called, EBX is a pointer to the destination buffer
 #     print('Call to kernel32_GetProcAddress reached')
@@ -28,15 +28,14 @@ import logging
 #     jitter.func_ret_stdcall(ret_ad, ad)
 #
 
-# def kernel32_Beep(jitter):
+# BEEEEEEP
+# def kernel32_Beep(jitter): 
 #     print('Call to kernel32_Beep reached')
 #     ret_ad, args = jitter.func_args_stdcall(["dwFreq", "dwDuration"])
 #     # ptr1 = jitter.get_arg_n_cdecl(1)
 #     # ptr2 = jitter.get_arg_n_cdecl(2)
 #     # print(ptr1)
 #     # print(ptr2)
-#     # ad = sb.libs.lib_get_add_func(args.libbase, fname, dst_ad)
-#     # jitter.handle_function(ad)
 #     jitter.func_ret_stdcall(ret_ad, 1)
 #     # return 0
 
@@ -50,7 +49,6 @@ sb = Sandbox_Win_x86_32(
 )
 
 ### ce code declenche une protection qui fait JUMP dans le merde au bout de 3 instructions
-
 # # Ensure there is one and only one leave (for OEP discovering)
 # mdis = sb.machine.dis_engine(sb.jitter.bs, loc_db=loc_db)
 # mdis.dont_dis_nulstart_bloc = True
@@ -85,6 +83,8 @@ sb.jitter.add_breakpoint(0xa91001, stop) # debut section .text
 # 00A943AF POPAD
 
 print("EntryPoint:", hex(sb.entry_point))
+
+# Tentative de bypass les protections initiales finalement inutile
 # print(hex(sb.entry_point+int(0x0d)))
 # sb.run(sb.entry_point+int(0x0d))
 sb.run()
@@ -98,4 +98,4 @@ print("Saving to %s" % out_fname)
 vm2pe(sb.jitter, out_fname, libs=sb.libs, e_orig=sb.pe)
 
 # py -i run_exe_nsm.py ../output_022.exe -z -o -i -b -s -l -y
-
+# py -i run_all_exe.py
