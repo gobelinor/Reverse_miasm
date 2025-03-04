@@ -49,7 +49,7 @@ sb = Sandbox_Win_x86_32(
     loc_db, options.filename, options, globals(),
 )
 
-### ce code declenche une protection qui fait JUMP dans le merde au bout de 3 instructions
+### ce code declenche une protection qui fait JUMP dans le neant au bout de 3 instructions
 
 # # Ensure there is one and only one leave (for OEP discovering)
 # mdis = sb.machine.dis_engine(sb.jitter.bs, loc_db=loc_db)
