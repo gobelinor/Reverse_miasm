@@ -44,7 +44,7 @@ sb.jitter.cpu.EAX = run_addr
 # 0x7ffdf064 DWORD NumberOfProcessors
 # Avoid crash and continue execution 
 sb.jitter.vm.add_memory_page(0x7ffdf002, PAGE_READ | PAGE_WRITE, b"\x00")
-sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x00\x00\x00\x02")
+sb.jitter.vm.add_memory_page(0x7ffdf064, PAGE_READ | PAGE_WRITE, b"\x03\x00\x00\x00")
 
 # Run at 
 sb.run(run_addr)
